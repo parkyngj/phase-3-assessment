@@ -7,8 +7,8 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:id])
 
     if request.xhr?
-      @toys = @pet.toys
-      render json: @toys
+      @toy = @pet.shortest_named_toy
+      render json: @toy
     end
   end
 end
