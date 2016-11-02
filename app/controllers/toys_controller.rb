@@ -3,11 +3,15 @@ class ToysController < ApplicationController
     @pet = Pet.find(params[:pet_id])
     @toys = @pet.toys
 
-    render json: @toys
+    render json: @toysr
   end
 
   def show
     @pet = Pet.find(params[:pet_id])
     @toy = Toy.find(params[:id])
+  end
+
+  def all
+    @toys = Toy.all
   end
 end
