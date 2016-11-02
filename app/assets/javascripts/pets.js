@@ -1,2 +1,12 @@
-// Place all the behaviors and hooks related to the matching controller here.
-// All this logic will automatically be available in application.js.
+$(document).ready(function(){
+
+  petShowLinkListener('.pet-show-link')
+
+})
+
+function petShowLinkListener(linkClass){
+  $(linkClass).on('ajax:success', function(event, response){
+    console.log("We're in!")
+    console.log(response);
+  })
+}

@@ -5,5 +5,10 @@ class PetsController < ApplicationController
 
   def show
     @pet = Pet.find(params[:id])
+
+    if request.xhr?
+      @toys = @pet.toys
+      render json: @toys
+    end
   end
 end
