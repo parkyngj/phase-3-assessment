@@ -3,7 +3,7 @@ class ToysController < ApplicationController
     @pet = Pet.find(params[:pet_id])
     @toys = @pet.toys
 
-    render json: @toysr
+    render json: @toys
   end
 
   def show
