@@ -8,7 +8,7 @@ class PetsController < ApplicationController
 
     if request.xhr?
       @toy = @pet.shortest_named_toy
-      render json: @toy
+      render html: @toy.descriptiong
     end
   end
 end

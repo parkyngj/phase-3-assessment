@@ -1,7 +1,5 @@
 $(document).ready(function(){
-
   petShowLinkListener('.pet-show-link')
-
 })
 
 function petShowLinkListener(linkClass){
