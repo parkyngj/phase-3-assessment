@@ -1,1 +1,9 @@
-<p class="bg-primary">This text is important.</p>
+<p class="bg-primary">views/pets/index.html.erb</p>
+
+<h3>All Pets</h3>
+
+<div id="pets-container">
+  <% @pets.each do |pet| %>
+    <p><%= pet.name %></p>
+  <% end %>
+</div>
