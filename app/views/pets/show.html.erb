@@ -9,3 +9,7 @@
   <p><strong>Age:</strong> <%= @pet.age %></p>
   <p><strong>Cute:</strong> <%= @pet.cute %></p>
 </div>
+
+<div id='pet-toys-link-container'>
+  <%= link_to "View all of #{@pet.name}'s toys", pet_toys_path(@pet) %>
+</div>
