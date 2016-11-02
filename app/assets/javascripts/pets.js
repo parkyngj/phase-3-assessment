@@ -6,7 +6,6 @@ $(document).ready(function(){
 
 function petShowLinkListener(linkClass){
   $(linkClass).on('ajax:success', function(event, response){
-    console.log("We're in!")
     console.log(response);
   })
 }
