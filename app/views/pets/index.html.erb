@@ -4,6 +4,6 @@
 
 <div id="pets-container">
   <% @pets.each do |pet| %>
-    <p><%= pet.name %></p>
+    <p><%= link_to pet.name, pet %></p>
   <% end %>
 </div>
