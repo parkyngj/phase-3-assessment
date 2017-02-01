@@ -1,0 +1,9 @@
+<p class="bg-primary">views/pets/index.html.erb</p>
+
+<h3>All Pets</h3>
+
+<div id="pets-container">
+  <% @pets.each do |pet| %>
+    <p><%= link_to pet.name, pet, remote: true, class: 'pet-show-link' %></p>
+  <% end %>
+</div>

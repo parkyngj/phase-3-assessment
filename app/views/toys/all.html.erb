@@ -1,0 +1,12 @@
+<p class="bg-primary">views/toys/all.html.erb</p>
+
+<h3>All Toys</h3>
+
+<div id="toys-container">
+  <% @toys.each do |toy| %>
+    <p>
+      <strong>Description: </strong> <%= toy.description %><br>
+      <strong>Belongs To: </strong> <%= link_to toy.pet.name, pet_path(toy.pet) %>
+    </p>
+  <% end %>
+</div>
